@@ -117,4 +117,49 @@
 .main-content {
     grid-area: main-content;
     background-color: #dbdbdb;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+.projects {
+    grid-row-end: span 2;
+    /* background-color: green; */
+    display: grid;
+    grid-template-rows: 2.5rem 1fr;
+}
+
+.projects-header {
+    align-self: center;
+}
+
+.projects-cards {
+    /* background-color: lightgreen; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 8px 1fr;
+}
+
+.stripe {
+    background-color: #F2AE2E;
+    background-clip: inherit;
+    border-radius: 8px 0 0 8px;
+}
+
+.announcements {
+    background-color: purple;
+}
+
+.trending-items {
+    background-color: yellow;
 }
